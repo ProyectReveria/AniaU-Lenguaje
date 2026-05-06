@@ -32,7 +32,7 @@ class bite_Center {
         std::string comando = "TextConsole.Log_Shell"; 
 
         if (linea.find(comando) != std::string::npos){
-            size_t inicio = linea.find("(" + 1); 
+            size_t inicio = linea.find("(" + 1);  //find permite encontrar texto especifico en un array y dividirlo para detectar cosas y separarlas
             size_t fin = linea.find(")", inicio); 
             if (inicio != std::string::npos && fin != std::string::npos) {
             std::string text_String = linea.substr(inicio, fin - inicio);
